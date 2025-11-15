@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="16.337">
+    <testcase classname="Login Page Functionality" name="Postive LogIn Test" time="5.968">
+        <system-out><![CDATA[And User enter the correct username as "Vigneshraj07".......................passed
+And User enter the correct password as "7094862477".........................passed
+When User click on the submit button........................................passed
+Then User verifies the new page contains  expected URL......................passed
+And User verifies new page contains expected text...........................passed
+And User verifies Logout button is displayed on the page....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Page Functionality" name="Negative Username Test" time="4.781">
+        <system-out><![CDATA[And User enter the incorrect username as "VigneshrajN"......................passed
+And User enter the correct password as "7094862477".........................passed
+When User click on the submit button........................................passed
+But User verifies error message is displayed................................passed
+And User verifies error message text is Invalid Login details...............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Page Functionality" name="Negative Password Test" time="5.306">
+        <system-out><![CDATA[And User enter the correct username as "Vigneshraj07".......................passed
+And User enter the incorrect password as "709486247"........................passed
+When User click on the submit button........................................passed
+But User verifies error message is displayed................................passed
+And User verifies error message text is Invalid Login details...............passed
+]]></system-out>
+    </testcase>
+</testsuite>
